@@ -1,0 +1,36 @@
+body{
+    background-color: rgba(223, 120, 152, 0.516);
+    color: #fffcfcfb;
+
+
+}
+
+table > thead > tr > th {
+    background-color: black;
+}
+
+main {
+  display: grid;
+  gap: 20px;
+}
+
+
+.bg-image {background-image: url(https://wallpaperbat.com/img/558975-airplane-desktop-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-image2 {background-image: url(https://th.bing.com/th/id/R.f1fee3a59c90ac086626441ef1f56739?rik=xxKo5jBBr4ABeA&pid=ImgRaw&r=0);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.bg-image3 {background-image: url(https://wallup.net/wp-content/uploads/2016/01/198208-Paris-Eiffel_Tower-HDR-architecture-city-sunset-France-cityscape-sunrise-landscape.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.bg-image4 {background-image: url(https://wallpapers.com/images/hd/palace-of-westminster-england-lve21rfitz0rpzfp.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;}

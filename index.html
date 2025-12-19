@@ -7,35 +7,54 @@
     <title>Eigene Webseite</title>
 
     <link rel="stylesheet" href="style.css">
+
   </head>
-
-  <body>
+  <body class="bg-image">
     <header>
-      <h1>Webseite von ...</h1>
+      <h1>Eine Reise durch New York, Paris und London</h1>
     </header>
-
     <main>
       <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
+        <h2>New York</h2>
+        <svg onclick="zeigeInfo('newyork')" viewBox ="0 0 10 10" width="32px">
+        <circle cx="5" cy="5" r="5" fill="#8e44ad"/>
+      </svg>
+New York, die Stadt, die niemals schläft.
+<a href="unterseiten/NewYork.html"> Entdecke New York</a>
       </section>
-
       <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
+        <h2>London</h2>
+         <svg onclick="zeigeInfo('london')" viewBox ="0 0 10 5" width="32px" height="16px">
+    <rect x="0" y="0" width="10" height="5" fill="#3498db" />
+  </svg>
+  London, wo der Big ben schlägt.
+<a href="./unterseiten/London.html">Entdecke London</a>
       </section>
-
       <section>
-        <h2>Unterseiten verlinken</h2>
-        <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
-        </p>
+        <h2>Paris</h2>
+         <svg onclick="zeigeInfo('paris')" viewBox="0 0 10 10" width="32px" height="32px">
+    <polygon points="5,0 10,10 0,10" fill="#e74c3c" />
+  </svg>
+  Paris, die Stadt der Liebe.
+          <a href="./unterseiten/paris.html">Entdecke Paris</a>
       </section>
     </main>
-
-    <footer>Meine Webseite</footer>
+    <footer>
+  <p>©2025 Eigene Webseite - Katina Rebmann</p>
+</footer>
+    <script>
+  window.onload = function() {
+    alert("Willkommen! Auf ins Abenteuer durch New York, London und Paris 🌍");
+  };
+  function zeigeInfo(stadt) {
+    if(stadt === "newyork") {
+      alert("Tipp für deine Reise nach NewYork: Kaufe dir eine Wochen-MetroCard, damit kommst du schnell und günstig überall hin.");
+    } else if(stadt === "london") {
+      alert("Tipp für deine Reise nach London: Steig in einen Doppeldeckerbus und setz dich nach oben, du wirst eine super Aussicht haben!");
+    } else if(stadt === "paris") {
+      alert("Tipp für deine Reise nach Paris: Geh Abends an der Seine spazieren, besonders wenn der Eiffelturm funkelt.");
+    }
+  }
+</script>
   </body>
 </html>
